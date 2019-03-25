@@ -2,7 +2,7 @@ CREATE PROC ContactCreateOrUpdate
 
 @ContactID int,
 @Name varchar(50),
-@Mobile varchar(50,
+@Mobile varchar(50),
 @Address varchar(250)
 AS
 BEGIN

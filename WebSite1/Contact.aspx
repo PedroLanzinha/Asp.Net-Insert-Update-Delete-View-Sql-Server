@@ -40,8 +40,8 @@
                     </tr>
                 <tr>
                     <td colspan="2">
-                        <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="Page_Load" />
-                        <asp:Button ID="btnDelete" runat="server" Text="Delete" OnClick="Page_Load" />
+                        <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" />
+                        <asp:Button ID="btnDelete" runat="server" Text="Delete" OnClick="btnDelete_Click" />
                         <asp:Button ID="btnClear" runat="server" Text="Clear" OnClick="btnClear_Click" />
                      </td>
                 </tr>
@@ -66,7 +66,7 @@
                     <asp:BoundField DataField="Address" HeaderText="Address" />
                     <asp:TemplateField>
                         <ItemTemplate>
-                            <asp:LinkButton ID="lnkView" runat="server" CommandArgument='<%# Eval("ContactID") %>' >View</asp:LinkButton>
+                            <asp:LinkButton ID="lnkView" runat="server" CommandArgument='<%# Eval("ContactID") %>' OnClick="lnk_OnClick">View</asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>
